@@ -25,6 +25,7 @@ addButton.addEventListener("click", function () {
   }
 });
 
+// Takes the user's input and creates a list item from that input and adds it to the unordered list
 const addToList = function (userInput) {
   const listItem = document.createElement("li");
   listItem.innerHTML = `<input class="checkbox" type="checkbox">${userInput}</input>`;
@@ -36,7 +37,14 @@ const clearInput = function () {
   input.value = "";
 };
 
-// Clears the list when "clear list" button is clicked
+// Clears the list when "clear list" button is clicked and user confirms
 clearListButton.addEventListener("click", function () {
-  listItems.innerHTML = "";
+  if (confirm("Are you sure you want to clear the list?")) {
+    console.log("yes");
+    listItems.innerHTML = "";
+  } else {
+    console.log("nah");
+  }
+  
+  
 });
