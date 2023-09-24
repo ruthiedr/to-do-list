@@ -7,18 +7,37 @@
   </head>
 
   <body>
-    <h1>To Do:</h1>
+   
+    <main>
+        <div class="content-container">
+
+            <h1>To Do:</h1>
+
+    <!-- Input Box and Button -->
+    <div class="input-container">
+        <div class="content-wrapper"> <!-- Do i need a content-wrapper div in each section?-->
     <input type="text"></input>
     <button class="add">add to list</button>
+    </div>
+    </div>
     
+    <!-- List Items Container -->
     <div class="list-items-container">
+        <div class="content-wrapper">
       <ul class="list-items"></ul>
+      </div>
     </div>
 
-    <!-- Add a modul(?) window or a user input alert to make sure the user wants to clear their list-->
+    <!-- Clear List Button -->
+    <div class="clear-list-container">
+        <div class="content-wrapper">
     <button class="clear-list">clear list</button>
+    <div class="content-wrapper"></div>
+    </div>
     
 
     <script src="src/index.js"></script>
+    </div>
+    </main>
   </body>
 </html>

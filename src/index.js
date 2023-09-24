@@ -16,6 +16,8 @@ const input = document.querySelector("input");
 // Select the "clear list" box
 const clearListButton = document.querySelector(".clear-list");
 
+
+
 // Create a list item for the user's input when add button is clicked
 addButton.addEventListener("click", function () {
   let userInput = input.value;
@@ -40,11 +42,9 @@ const clearInput = function () {
 // Clears the list when "clear list" button is clicked and user confirms
 clearListButton.addEventListener("click", function () {
   if (confirm("Are you sure you want to clear the list?")) {
-    console.log("yes");
     listItems.innerHTML = "";
-  } else {
-    console.log("nah");
-  }
-  
-  
-});
+  } 
+  });
+
+
+
