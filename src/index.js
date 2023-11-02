@@ -1,8 +1,10 @@
-// function run when button is clicked:
+// function run when add to list button is clicked:
 // when text inputed, output innerHTML checkbox
-// function run when checkbox is checked:
-// class added where text is faded and text-decoration: line through
-// add a clear list button
+
+// function run when clear list button is clicked:
+// list is cleared
+
+// ADDITIONAL IDEAS: -different "themes", that are classes that can be applied and unapplied
 
 // Select the add to list button
 const addButton = document.querySelector(".add");
